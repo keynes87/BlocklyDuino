@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <block type="bluetooth">
+    <field name="BT_type">Classic BT</field>
+    <value name="NAME">
+      <block type="text">
+        <field name="TEXT">MyESP32</field>
+      </block>
+    </value>
+  </block>
+  <block type="data_available"></block>
+  <block type="recieve_data"></block>
+  <block type="sand_data">
+    <value name="data">
+      <block type="text">
+        <field name="TEXT">Hello World!</field>
+      </block>
+    </value>
+  </block>
+</xml>
