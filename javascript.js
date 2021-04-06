@@ -6,7 +6,7 @@ Blockly.Arduino.esp32_bluetooth = function(block) {
   return code;
 };
 
-Blockly.Arduino.esp32_data_available'] = function(block) {
+Blockly.Arduino.esp32_data_available = function(block) {
   // TODO: Assemble Arduino into code variable.
   var code = '...';
   // TODO: Change ORDER_NONE to the correct strength.
