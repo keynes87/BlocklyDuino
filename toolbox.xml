@@ -1,19 +1,34 @@
-<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+<category id="wzBlocks" name="wzBlocks">
+<category id="catbluetooth" name="catbluetooth">
+
+  <category id="wzCategory1" name="wzCategory1">
   <block type="bluetooth">
     <field name="BT_type">Classic BT</field>
     <value name="NAME">
       <block type="text">
-        <field name="TEXT">MyESP32</field>
+        <field name="TEXT"></field>
       </block>
     </value>
   </block>
+  </category>
+  
+  <category id="wzCategory2" name="wzCategory2">
   <block type="data_available"></block>
+  </category>
+  
+  <category id="wzCategory3" name="wzCategory3">
   <block type="recieve_data"></block>
-  <block type="sand_data">
+  </category>
+  
+  <category id="wzCategory4" name="wzCategory4">
+  <block type="send_data">
     <value name="data">
       <block type="text">
-        <field name="TEXT">Hello World!</field>
+        <field name="TEXT"></field>
       </block>
     </value>
   </block>
-</xml>
+  </category>
+
+</category>
+</category>

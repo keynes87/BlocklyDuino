@@ -20,7 +20,7 @@ Blockly.JavaScript['recieve_data'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 
-Blockly.JavaScript['sand_data'] = function(block) {
+Blockly.JavaScript['send_data'] = function(block) {
   var value_data = Blockly.JavaScript.valueToCode(block, 'data', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
   var code = '...';

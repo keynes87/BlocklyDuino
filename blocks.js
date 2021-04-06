@@ -10,45 +10,37 @@ Blockly.Blocks['bluetooth'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
- this.setTooltip("設定藍牙模式及名稱");
- this.setHelpUrl("");
   }
 };
 
 Blockly.Blocks['data_available'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("從藍牙接收到資料?");
+        .appendField(Blockly.Msg.data_available);
     this.setOutput(true, null);
     this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
 
 Blockly.Blocks['recieve_data'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("讀取藍牙設備資料(數值)");
+        .appendField(Blockly.Msg.recieve_data);
     this.setOutput(true, null);
     this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
 
-Blockly.Blocks['sand_data'] = {
+Blockly.Blocks['send_data'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("傳送資料");
+        .appendField(Blockly.Msg.send_data);
     this.appendValueInput("data")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField("到藍牙裝置");
+        .appendField(Blockly.Msg.on_bluetooth);
     this.setInputsInline(true);
     this.setOutput(true, null);
     this.setColour(230);
- this.setTooltip("");
- this.setHelpUrl("");
   }
 };
