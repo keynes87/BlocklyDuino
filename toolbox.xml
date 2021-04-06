@@ -1,7 +1,5 @@
 <category id="wzBlocks" name="wzBlocks">
-<category id="catbluetooth" name="catbluetooth">
 
-  <category id="wzCategory1" name="wzCategory1">
   <block type="bluetooth">
     <field name="BT_type">Classic BT</field>
     <value name="NAME">
@@ -10,17 +8,11 @@
       </block>
     </value>
   </block>
-  </category>
   
-  <category id="wzCategory2" name="wzCategory2">
   <block type="data_available"></block>
-  </category>
   
-  <category id="wzCategory3" name="wzCategory3">
   <block type="recieve_data"></block>
-  </category>
-  
-  <category id="wzCategory4" name="wzCategory4">
+ 
   <block type="send_data">
     <value name="data">
       <block type="text">
@@ -28,7 +20,5 @@
       </block>
     </value>
   </block>
-  </category>
 
-</category>
 </category>
