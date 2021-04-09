@@ -5,7 +5,7 @@ Blockly.Blocks['esp32_bluetooth'] = {
         .appendField(new Blockly.FieldDropdown([['Classic BT','Classic BT'], ['BLE','BLE']]), 'BT_type')
         .appendField(Blockly.Msg.BT_name);
     this.appendValueInput('NAME')
-        .setCheck("String");
+        .setCheck('String');
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
