@@ -2,9 +2,9 @@ Blockly.Arduino.esp32_bluetooth = function(block) {
   var dropdown_bt_type = block.getFieldValue("BT_type");
   var value_name = Blockly.Arduino.valueToCode(block, "NAME", Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
-  if (BT_type == "Classic BT") {
+  if (dropdown_bt_type == "Classic BT") {
       var code = "#include <bluetoothSerial.h>;\n";
-  } else if (BT_type == "BLE") {
+  } else if (dropdown_bt_type == "BLE") {
       var code = "#include <BLE.h>;\n";
   } else
 	  var code = "";
