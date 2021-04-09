@@ -10,9 +10,11 @@ Blockly.Blocks.esp32_bluetooth = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
+	this.setTooltip("digitalWrite(pin, value)");
+	this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
   }
 };
-
+/*
 Blockly.Blocks.esp32_data_available = {
   init: function() {
     this.appendDummyInput()
@@ -44,3 +46,4 @@ Blockly.Blocks.esp32_send_data = {
     this.setColour(230);
   }
 };
+*/
