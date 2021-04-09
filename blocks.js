@@ -1,4 +1,4 @@
-Blockly.Blocks['bluetooth'] = {
+Blockly.Blocks.esp32_bluetooth = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.set_BT_Type)
@@ -14,7 +14,7 @@ Blockly.Blocks['bluetooth'] = {
     this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
   }
 };
-/*
+
 Blockly.Blocks.esp32_data_available = {
   init: function() {
     this.appendDummyInput()

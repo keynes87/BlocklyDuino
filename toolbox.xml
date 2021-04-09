@@ -1,6 +1,6 @@
 <category id="wzBlocks" name="wzBlocks">
 
-  <block type="bluetooth">
+  <block type="esp32_bluetooth">
     <field name="BT_type">Classic BT</field>
     <value name="NAME">
       <block type="text">
@@ -9,11 +9,11 @@
     </value>
   </block>
   
-  <block type="data_available"></block>
+  <block type="esp32_data_available"></block>
   
-  <block type="recieve_data"></block>
+  <block type="esp32_recieve_data"></block>
  
-  <block type="send_data">
+  <block type="esp32_send_data">
     <value name="data">
       <block type="text">
         <field name="TEXT"></field>
