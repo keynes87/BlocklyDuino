@@ -3,9 +3,15 @@ Blockly.Arduino.esp32_bluetooth = function(block) {
   var value_name = Blockly.Arduino.valueToCode(block, "NAME", Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
   if (dropdown_bt_type == "Classic BT") {
-      var code = "Classic BT\n";
+	  Blockly.Arduino.definitions_["BT_type"] = '#include <BluetoothSerial.h>\n'+
+	                                            '\n'+
+												'BluetoothSerial esp32BT;\n';
+      var code = 'esp32BT.begin("'+NAME+'");\n';
   } else if (dropdown_bt_type == "BLE") {
-      var code = "BLE\n";
+	  Blockly.Arduino.definitions_["BT_type"] = '#include <esp32BLEUtilities.h>\n'+
+	                                            '\n'+
+												'BluetoothSerial esp32BT;\n';
+      var code = 'esp32BLE.begin("'+NAME+'");\n';
   } else
 	  var code = "";
   return code;
