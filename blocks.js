@@ -46,4 +46,3 @@ Blockly.Blocks['esp32_send_data'] = {
     this.setColour(230);
   }
 };
-*/
