@@ -10,8 +10,8 @@ Blockly.Blocks['esp32_bluetooth'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
-    this.setTooltip("digitalWrite(pin, value)");
-    this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
 
@@ -21,8 +21,8 @@ Blockly.Blocks['esp32_data_available'] = {
         .appendField(Blockly.Msg.data_available);
     this.setOutput(true, null);
     this.setColour(230);
-    this.setTooltip("digitalWrite(pin, value)");
-    this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
 
@@ -32,8 +32,8 @@ Blockly.Blocks['esp32_recieve_data'] = {
         .appendField(Blockly.Msg.recieve_data);
     this.setOutput(true, null);
     this.setColour(230);
-    this.setTooltip("digitalWrite(pin, value)");
-    this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
 
@@ -48,7 +48,7 @@ Blockly.Blocks['esp32_send_data'] = {
     this.setInputsInline(true);
     this.setOutput(true, null);
     this.setColour(230);
-    this.setTooltip("digitalWrite(pin, value)");
-    this.setHelpUrl("https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/");
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
