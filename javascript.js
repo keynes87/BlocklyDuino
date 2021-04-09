@@ -13,20 +13,20 @@ Blockly.Arduino.esp32_bluetooth = function(block) {
 												'BluetoothSerial esp32BT;\n';
       var code = 'esp32BLE.begin("'+NAME+'");\n';
   } else
-	  var code = "";
+	  var code = '';
   return code;
 };
 
 Blockly.Arduino.esp32_data_available = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var code = "";
+  var code = '';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Arduino.ORDER_NONE];
 };
 
 Blockly.Arduino.esp32_recieve_data = function(block) {
   // TODO: Assemble Arduino into code variable.
-  var code = "";
+  var code = '';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Arduino.ORDER_NONE];
 };
@@ -34,7 +34,7 @@ Blockly.Arduino.esp32_recieve_data = function(block) {
 Blockly.Arduino.esp32_send_data = function(block) {
   var value_data = Blockly.Arduino.valueToCode(block, "data", Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
-  var code = "";
+  var code = '';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.Arduino.ORDER_NONE];
 };
