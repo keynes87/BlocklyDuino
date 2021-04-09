@@ -5,7 +5,7 @@ Blockly.Arduino.esp32_bluetooth = function(block) {
   if (BT_type == 'Classic BT') {
       var code = '#include <bluetoothSerial.h>;\n';
   } else if (BT_type == 'BLE') {
-	  var code = '#include <BLE.h>;\n';
+      var code = '#include <BLE.h>;\n';
   }
   return code;
 };
