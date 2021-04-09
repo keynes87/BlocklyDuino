@@ -1,4 +1,4 @@
-Blockly.Blocks.esp32_bluetooth = {
+Blockly.Blocks['esp32_bluetooth'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.set_BT_Type)
@@ -15,7 +15,7 @@ Blockly.Blocks.esp32_bluetooth = {
   }
 };
 
-Blockly.Blocks.esp32_data_available = {
+Blockly.Blocks['esp32_data_available'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.data_available);
@@ -24,7 +24,7 @@ Blockly.Blocks.esp32_data_available = {
   }
 };
 
-Blockly.Blocks.esp32_recieve_data = {
+Blockly.Blocks['esp32_recieve_data'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.recieve_data);
@@ -33,7 +33,7 @@ Blockly.Blocks.esp32_recieve_data = {
   }
 };
 
-Blockly.Blocks.esp32_send_data = {
+Blockly.Blocks['esp32_send_data'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.send_data);
