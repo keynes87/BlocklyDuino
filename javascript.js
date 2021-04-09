@@ -1,6 +1,6 @@
 Blockly.Arduino.esp32_bluetooth = function(block) {
-  var dropdown_bt_type = block.getFieldValue('BT_type');
-  var value_name = Blockly.Arduino.valueToCode(block, 'NAME', Blockly.Arduino.ORDER_ATOMIC);
+  var dropdown_bt_type = block.getFieldValue("BT_type");
+  var value_name = Blockly.Arduino.valueToCode(block, "NAME", Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
   if (BT_type == "Classic BT") {
       var code = "#include <bluetoothSerial.h>;\n";
@@ -26,7 +26,7 @@ Blockly.Arduino.esp32_recieve_data = function(block) {
 };
 
 Blockly.Arduino.esp32_send_data = function(block) {
-  var value_data = Blockly.Arduino.valueToCode(block, 'data', Blockly.Arduino.ORDER_ATOMIC);
+  var value_data = Blockly.Arduino.valueToCode(block, "data", Blockly.Arduino.ORDER_ATOMIC);
   // TODO: Assemble Arduino into code variable.
   var code = "";
   // TODO: Change ORDER_NONE to the correct strength.
