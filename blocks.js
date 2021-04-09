@@ -1,4 +1,4 @@
-Blockly.Blocks.esp32_bluetooth = {
+Blockly.Blocks['bluetooth'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.set_BT_Type)
