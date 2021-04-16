@@ -1,46 +1,53 @@
-Blockly.Blocks['esp32_bluetooth'] = {
+Blockly.Blocks['bluetooth'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(Blockly.Msg.set_BT_Type)
-        .appendField(new Blockly.FieldDropdown([['Classic BT','Classic BT'], ['BLE','BLE']]), 'BT_type')
-        .appendField(Blockly.Msg.BT_name);
-    this.appendValueInput('NAME')
-        .setCheck('String');
+        .appendField(Blockly.Msg.set_classicBT);
+    this.appendValueInput("NAME")
+        .setCheck("String");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
   }
 };
 
-Blockly.Blocks['esp32_data_available'] = {
+Blockly.Blocks['data_available'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.data_available);
     this.setOutput(true, null);
     this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
   }
 };
 
-Blockly.Blocks['esp32_recieve_data'] = {
+Blockly.Blocks['recieve_data'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.recieve_data);
-    this.setOutput(true, null);
+    this.setOutput(true, "Number");
     this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
   }
 };
 
-Blockly.Blocks['esp32_send_data'] = {
+Blockly.Blocks['send_data'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(Blockly.Msg.send_data);
-    this.appendValueInput('data')
+    this.appendValueInput("data")
         .setCheck(null);
     this.appendDummyInput()
-        .appendField(Blockly.Msg.on_bluetooth);
-    this.setInputsInline(true);
-    this.setOutput(true, null);
+        .appendField(Blockly.Msg.on_BT);
+   this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
     this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
   }
 };

@@ -1,24 +1,19 @@
 <category id="wzBlocks" name="wzBlocks">
-
-  <block type="esp32_bluetooth">
-    <field name="BT_type">Classic BT</field>
+  <block type="bluetooth">
     <value name="NAME">
       <block type="text">
-        <field name="TEXT"></field>
-      </block>
-    </value>
-  </block>
-  
-  <block type="esp32_data_available"></block>
-  
-  <block type="esp32_recieve_data"></block>
- 
-  <block type="esp32_send_data">
-    <value name="data">
-      <block type="text">
-        <field name="TEXT"></field>
+        <field name="TEXT">MyBT</field>
       </block>
     </value>
   </block>
 
+  <block type="data_available"></block>
+  <block type="recieve_data"></block>
+  <block type="send_data">
+    <value name="data">
+      <block type="text">
+        <field name="TEXT">Hello World!</field>
+      </block>
+    </value>
+  </block>
 </category>
